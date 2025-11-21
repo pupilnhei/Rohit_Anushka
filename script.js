@@ -63,10 +63,10 @@ window.onload = function() {
     
     // Update names if needed
     if (document.querySelector('#leftName')) {
-        document.getElementById('leftName').textContent = "Sanma";
+        document.getElementById('leftName').textContent = "Anushka";
     }
     if (document.querySelector('#rightName')) {
-        document.getElementById('rightName').textContent = "Rahul";
+        document.getElementById('rightName').textContent = "Rohit";
     }
 };
 
@@ -130,8 +130,8 @@ function setupImageSlider() {
 
 // Countdown timer to wedding day
 function setupCountdown() {
-    // Set the wedding date - April 29, 2025
-    const weddingDate = new Date("April 29, 2025 10:00:00").getTime();
+    // Set the wedding date - November 30, 2025 at 1:22 AM
+    const weddingDate = new Date("November 30, 2025 01:22:00").getTime();
     
     // Update the countdown every second
     const countdownTimer = setInterval(function() {
@@ -189,7 +189,7 @@ function addToCalendar(eventTitle, eventDate, eventTime, venue) {
         '&text=' + encodeURIComponent(eventTitle) +
         '&dates=' + startDateTime.toISOString().replace(/-|:|\.\d+/g, '') +
         '/' + endDateTime.toISOString().replace(/-|:|\.\d+/g, '') +
-        '&details=' + encodeURIComponent('Wedding Event in Uttarakhand') +
+        '&details=' + encodeURIComponent('Wedding Event at Sri Shiva Sai Garden & Function Hall, Hyderabad') +
         '&location=' + encodeURIComponent(venue) +
         '&sf=true&output=xml';
 
@@ -201,7 +201,8 @@ function addToCalendar(eventTitle, eventDate, eventTime, venue) {
 
 // Open Google Maps directions
 function openDirections() {
-    window.open('https://maps.app.goo.gl/5VZdSUqnH6Fueuxz9', '_blank');
+    // Sri Shiva Sai Garden & Function Hall, Road No. 8, SV Nagar, Nagaram, Hyderabad
+    window.open('https://www.google.com/maps/search/?api=1&query=Sri+Shiva+Sai+Garden+Function+Hall+Road+No+8+SV+Nagar+Nagaram+Hyderabad', '_blank');
 }
 
 // Live stream function
